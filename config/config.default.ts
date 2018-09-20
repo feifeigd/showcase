@@ -8,7 +8,9 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1537412627000_2779';
 
   // add your egg config in here
-  config.middleware = [];
+  config.middleware = [
+    'robot'
+  ];
 
   // 
   config.view = {
@@ -23,6 +25,11 @@ export default (appInfo: EggAppInfo) => {
     serverUrl: 'https://hacker-news.firebaseio.com/v0'
   };
 
+  config.robot = {
+    ua: [
+      /Baiduspider/i
+    ]
+  };
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
