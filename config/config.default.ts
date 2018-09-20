@@ -16,7 +16,13 @@ export default (appInfo: EggAppInfo) => {
     mapping:{
       '.tpl': 'nunjucks'
     }
-  }
+  };
+
+  config.news = {
+    pageSize: 5,
+    serverUrl: 'https://hacker-news.firebaseio.com/v0'
+  };
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
