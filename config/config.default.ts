@@ -9,26 +9,26 @@ export default (appInfo: EggAppInfo) => {
 
   // add your egg config in here
   config.middleware = [
-    'robot'
+    'robot',
   ];
 
-  // 
+  //
   config.view = {
     defaultViewEngine: 'nunjucks',
-    mapping:{
-      '.tpl': 'nunjucks'
-    }
+    mapping: {
+      '.tpl': 'nunjucks',
+    },
   };
 
   config.news = {
     pageSize: 5,
-    serverUrl: 'https://hacker-news.firebaseio.com/v0'
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
 
   config.robot = {
     ua: [
-      /Baiduspider/i
-    ]
+      /Baiduspider/i,
+    ],
   };
   // add your special config in here
   const bizConfig = {

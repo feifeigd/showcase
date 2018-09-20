@@ -1,6 +1,12 @@
 {
   "extends": "tslint:latest",
   "rules": {
+    "curly": [true, "ignore-same-line"],
+    "indent": [
+      false,
+      "tabs",
+      4
+    ],
     "quotemark": [
       true,
       "single",
